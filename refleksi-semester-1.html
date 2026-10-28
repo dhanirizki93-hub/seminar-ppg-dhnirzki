@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refleksi Semester 1 | Seminar PPG 2026 - Dhani Rizki</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- TOP HEADER / NAVBAR -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Brand & Identity -->
+      <a href="index.html" class="header-brand">
+        <img src="assets/images/favicon.svg" alt="Logo Seminar PPG 2026" class="brand-logo-img">
+        <div class="brand-title-wrap">
+          <div class="brand-title">SEMINAR PPG <span class="brand-badge">2026</span></div>
+          <div class="brand-subtitle">Dhani Rizki • UPI Bandung</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Pills -->
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> <span>Beranda</span></a>
+        <a href="identifikasi-diri.html" class="nav-link"><i class="fa-solid fa-user-check"></i> <span>Identifikasi Diri</span></a>
+        <a href="refleksi-semester-1.html" class="nav-link"><i class="fa-solid fa-book-bookmark"></i> <span>Semester 1</span></a>
+        <a href="refleksi-semester-2.html" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> <span>Semester 2</span></a>
+        <a href="refleksi-pengalaman.html" class="nav-link"><i class="fa-solid fa-compass"></i> <span>Refleksi & RTL</span></a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="header-actions">
+        <button class="theme-toggle-btn" aria-label="Ganti Mode Gelap / Terang" title="Ganti Mode Tampilan (Dark/Light)">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-nav-toggle" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <span class="mobile-drawer-title"><i class="fa-solid fa-bars-staggered"></i> Menu Navigasi</span>
+      <span class="badge badge-maroon" style="font-size: 0.72rem;">PPG 2026</span>
+    </div>
+    <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Beranda</a>
+    <a href="identifikasi-diri.html" class="nav-link"><i class="fa-solid fa-user-check"></i> Identifikasi Diri Guru</a>
+    <a href="refleksi-semester-1.html" class="nav-link"><i class="fa-solid fa-book-bookmark"></i> Refleksi Semester 1 (6 MK)</a>
+    <a href="refleksi-semester-2.html" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Refleksi Semester 2 (5 MK)</a>
+    <a href="refleksi-pengalaman.html" class="nav-link"><i class="fa-solid fa-compass"></i> Refleksi Belajar & RTL</a>
+    <div class="mobile-drawer-footer">
+      <div style="font-size: 0.8rem; color: var(--color-text-subtle);">Dhani Rizki (NIM: 2531049)</div>
+      <div style="font-size: 0.75rem; color: var(--color-primary); font-weight: 700;">Universitas Pendidikan Indonesia</div>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="hero-section" style="padding: 3rem 0;">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 0;">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Lembar Kerja 2 (LK 2)</span>
+          <h1 class="hero-title" style="font-size: clamp(2rem, 3.2vw, 2.6rem); margin-bottom: 1rem;">
+            Refleksi Pengalaman Belajar Semester 1
+          </h1>
+          <p class="section-description">
+            Kajian kritis dan reflektif terhadap 6 mata kuliah fondasi pedagogik dan keilmuan menggunakan model <strong>4C (Connection, Challenge, Concept, Change)</strong> serta pembuktian melalui <strong>Analisis Artefak Pembelajaran</strong> autentik.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FILTER TABS & COURSES -->
+    <section class="section">
+      <div class="container">
+        <!-- Filter Tabs -->
+        <div class="filter-tabs-wrapper">
+          <div class="filter-tabs" id="sem1-filters">
+            <button class="filter-tab-btn active" data-filter="all"><i class="fa-solid fa-border-all"></i> Semua (6)</button>
+            <button class="filter-tab-btn" data-filter="filosofi"><i class="fa-solid fa-book-open-reader"></i> 1. Filosofi & Nilai</button>
+            <button class="filter-tab-btn" data-filter="pemahaman-peserta-didik"><i class="fa-solid fa-children"></i> 2. Peserta Didik</button>
+            <button class="filter-tab-btn" data-filter="asesmen-dasar"><i class="fa-solid fa-compass-drafting"></i> 3. Mendalam & Asesmen</button>
+            <button class="filter-tab-btn" data-filter="growth-mindset"><i class="fa-solid fa-brain"></i> 4. Growth Mindset</button>
+            <button class="filter-tab-btn" data-filter="ppl-terbimbing"><i class="fa-solid fa-school"></i> 5. PPL Terbimbing</button>
+            <button class="filter-tab-btn" data-filter="diferensiasi"><i class="fa-solid fa-layer-group"></i> 6. Diferensiasi</button>
+          </div>
+        </div>
+
+        <!-- Render Target for 6 Courses -->
+        <div id="sem1-container">
+          <!-- Rendered dynamically by main.js from PPG_DATA.semester1 -->
+        </div>
+
+        <!-- SINTESIS KETERKAITAN SELURUH PENGALAMAN SEMESTER 1 -->
+        <div class="card" style="border: 2px solid var(--color-primary-border); background: linear-gradient(135deg, var(--color-surface), var(--color-primary-soft)); margin-top: 3.5rem; padding: 2.5rem;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div class="card-icon-header" style="margin-bottom: 0;">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <div>
+              <span class="badge badge-maroon" style="margin-bottom: 0.35rem;">Sintesis Integratif LK 2</span>
+              <h2 style="font-size: 1.55rem; color: var(--color-text-title); margin: 0;">
+                Sintesis Keterkaitan Seluruh Pengalaman Belajar Semester 1
+              </h2>
+            </div>
+          </div>
+
+          <div class="card-body" style="font-size: 0.98rem; line-height: 1.85; color: var(--color-text);">
+            <p style="margin-bottom: 1.25rem;">
+              Seluruh mata kuliah Semester 1 saling melengkapi dalam membentuk pemahaman saya sebagai calon guru Informatika. Filosofi Pendidikan memberikan landasan untuk berpihak kepada murid, Pemahaman tentang Peserta Didik membantu mengenali kebutuhan mereka, Growth Mindset mendorong perkembangan kemampuan, Pembelajaran Berdiferensiasi menyediakan strategi yang adaptif, Pembelajaran Mendalam dan Asesmen menyelaraskan tujuan serta kegiatan belajar, sedangkan PPL menjadi sarana penerapan dan refleksi secara langsung.
+            </p>
+
+            <div style="background: var(--color-surface); padding: 1.5rem 1.75rem; border-radius: var(--radius-md); border-left: 4px solid var(--color-primary); box-shadow: var(--shadow-sm); margin-bottom: 0;">
+              <p style="margin: 0; font-size: 1rem; font-weight: 500; color: var(--color-text-title); line-height: 1.75;">
+                <i class="fa-solid fa-quote-left" style="color: var(--color-primary); margin-right: 0.5rem;"></i>
+                Ke depannya, saya ingin menjadi guru yang mampu merancang pembelajaran Informatika yang bermakna, adaptif, dan mendorong murid terus berkembang. Saya akan berusaha memahami kebutuhan murid, memberikan dukungan yang sesuai, memanfaatkan asesmen untuk perbaikan, serta menciptakan suasana kelas yang mendorong murid berani bertanya, mencoba, dan belajar dari kesalahan.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination / Next Navigation Banner -->
+        <div class="page-nav-banner">
+          <div class="page-nav-item">
+            <span class="page-nav-label">Halaman Sebelumnya</span>
+            <a href="identifikasi-diri.html" class="page-nav-link"><i class="fa-solid fa-arrow-left"></i> Identifikasi Diri Guru</a>
+          </div>
+          <div class="page-nav-item" style="text-align: right;">
+            <span class="page-nav-label">Halaman Selanjutnya</span>
+            <a href="refleksi-semester-2.html" class="page-nav-link">Refleksi Semester 2 (5 MK) <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DETAIL ARTEFAK -->
+  <div class="modal-backdrop" id="artefak-modal" role="dialog" aria-modal="true" aria-labelledby="modal-artefak-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--color-primary); letter-spacing: 0.05em;">
+            Pratinjau Analisis Artefak Pembelajaran
+          </span>
+          <h3 class="modal-title" id="modal-artefak-title">Judul Mata Kuliah</h3>
+        </div>
+        <button class="modal-close-btn" aria-label="Tutup Jendela Pratinjau">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-artefak-body">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+    </div>
+  </div>
+
+    <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-simple">
+      <div>&copy; 2026 Dhani Rizki • Universitas Pendidikan Indonesia</div>
+      <div class="footer-meta-pill">NIM: 2531049 • Pendidikan Informatika</div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

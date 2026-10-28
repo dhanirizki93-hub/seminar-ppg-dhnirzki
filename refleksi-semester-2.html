@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refleksi Semester 2 | Seminar PPG 2026 - Dhani Rizki</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- TOP HEADER / NAVBAR -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Brand & Identity -->
+      <a href="index.html" class="header-brand">
+        <img src="assets/images/favicon.svg" alt="Logo Seminar PPG 2026" class="brand-logo-img">
+        <div class="brand-title-wrap">
+          <div class="brand-title">SEMINAR PPG <span class="brand-badge">2026</span></div>
+          <div class="brand-subtitle">Dhani Rizki â€¢ UPI Bandung</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Pills -->
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> <span>Beranda</span></a>
+        <a href="identifikasi-diri.html" class="nav-link"><i class="fa-solid fa-user-check"></i> <span>Identifikasi Diri</span></a>
+        <a href="refleksi-semester-1.html" class="nav-link"><i class="fa-solid fa-book-bookmark"></i> <span>Semester 1</span></a>
+        <a href="refleksi-semester-2.html" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> <span>Semester 2</span></a>
+        <a href="refleksi-pengalaman.html" class="nav-link"><i class="fa-solid fa-compass"></i> <span>Refleksi & RTL</span></a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="header-actions">
+        <button class="theme-toggle-btn" aria-label="Ganti Mode Gelap / Terang" title="Ganti Mode Tampilan (Dark/Light)">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-nav-toggle" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <span class="mobile-drawer-title"><i class="fa-solid fa-bars-staggered"></i> Menu Navigasi</span>
+      <span class="badge badge-maroon" style="font-size: 0.72rem;">PPG 2026</span>
+    </div>
+    <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Beranda</a>
+    <a href="identifikasi-diri.html" class="nav-link"><i class="fa-solid fa-user-check"></i> Identifikasi Diri Guru</a>
+    <a href="refleksi-semester-1.html" class="nav-link"><i class="fa-solid fa-book-bookmark"></i> Refleksi Semester 1 (6 MK)</a>
+    <a href="refleksi-semester-2.html" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Refleksi Semester 2 (5 MK)</a>
+    <a href="refleksi-pengalaman.html" class="nav-link"><i class="fa-solid fa-compass"></i> Refleksi Belajar & RTL</a>
+    <div class="mobile-drawer-footer">
+      <div style="font-size: 0.8rem; color: var(--color-text-subtle);">Dhani Rizki (NIM: 2531049)</div>
+      <div style="font-size: 0.75rem; color: var(--color-primary); font-weight: 700;">Universitas Pendidikan Indonesia</div>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="hero-section" style="padding: 3rem 0;">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 0;">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Lembar Kerja 3 (LK 3)</span>
+          <h1 class="hero-title" style="font-size: clamp(2rem, 3.2vw, 2.6rem); margin-bottom: 1rem;">
+            Refleksi Pengalaman Belajar Semester 2
+          </h1>
+          <p class="section-description">
+            Refleksi mendalam pada fase pemantapan profesi: menghubungkan teori 5 mata kuliah lanjutan dengan praktik nyata <strong>PPL Mandiri di SMA Negeri 24 Bandung</strong>, perancangan <strong>Projek Kepemimpinan</strong>, dan peluncuran karya inovasi digital <strong>KomPora (Komputasi dan Eksplorasi)</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FILTER TABS & COURSES -->
+    <section class="section">
+      <div class="container">
+        <!-- Filter Tabs -->
+        <div class="filter-tabs-wrapper">
+          <div class="filter-tabs" id="sem2-filters">
+            <button class="filter-tab-btn active" data-filter="all"><i class="fa-solid fa-border-all"></i> Semua (5)</button>
+            <button class="filter-tab-btn" data-filter="pse"><i class="fa-solid fa-heart-pulse"></i> 1. Sosial Emosional</button>
+            <button class="filter-tab-btn" data-filter="ppg-berkelanjutan"><i class="fa-solid fa-chart-line"></i> 2. PPG & Berkelanjutan</button>
+            <button class="filter-tab-btn" data-filter="asesmen-lanjut"><i class="fa-solid fa-laptop-code"></i> 3. Asesmen Lanjut</button>
+            <button class="filter-tab-btn" data-filter="projek-kepemimpinan"><i class="fa-solid fa-users-gear"></i> 4. Projek Kepemimpinan</button>
+            <button class="filter-tab-btn" data-filter="ppl-mandiri"><i class="fa-solid fa-school-flag"></i> 5. PPL Mandiri</button>
+          </div>
+        </div>
+
+        <!-- Render Target for 5 Courses -->
+        <div id="sem2-container">
+          <!-- Rendered dynamically by main.js from PPG_DATA.semester2 -->
+        </div>
+
+        <!-- SPECIAL HIGHLIGHT: KARYA INOVASI PEMBELAJARAN KOMPORA -->
+        <div class="card" style="border: 2px solid var(--color-accent); background: linear-gradient(135deg, var(--color-surface), var(--color-accent-soft)); margin-top: 3.5rem; padding: 2.5rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="card-icon-header" style="margin-bottom: 0; background: var(--color-accent-soft); color: var(--color-accent-text);">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div>
+                <span class="badge badge-gold" style="margin-bottom: 0.25rem;">Sorotan Karya Inovasi Seminar PPG</span>
+                <h3 style="font-size: 1.45rem; color: var(--color-text-title); margin: 0;">
+                  KomPora (Komputasi dan Eksplorasi) — Wahana Belajar 4 Pilar Berpikir Komputasional
+                </h3>
+              </div>
+            </div>
+            <span class="badge badge-outline"><i class="fa-solid fa-code"></i> Kurikulum Merdeka - Fase E SMA</span>
+          </div>
+
+          <div class="card-body" style="font-size: 0.95rem; line-height: 1.7; color: var(--color-text);">
+            <p>
+              Sebagai wujud integrasi mata kuliah <strong>PPL Mandiri</strong>, <strong>Pembelajaran Mendalam Lanjut</strong>, dan <strong>Projek Kepemimpinan</strong>, saya merancang karya inovasi pembelajaran bernama <strong>KomPora (Komputasi dan Eksplorasi)</strong> untuk menjawab kendala nyata siswa kelas X-D SMAN 24 Bandung dalam memahami abstraksi materi <em>Computational Thinking</em>.
+            </p>
+            <div class="cards-grid-4" style="gap: 1rem; margin: 1.5rem 0;">
+              <div style="background: var(--color-surface); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--color-card-border);">
+                <strong style="color: var(--color-primary); font-size: 0.88rem; display: block; margin-bottom: 0.3rem;">
+                  <i class="fa-solid fa-puzzle-piece"></i> 1. Dekomposisi
+                </strong>
+                <p style="font-size: 0.82rem; margin: 0; color: var(--color-text-muted);">
+                  Simulator interaktif bedah modul kamar tidur & pemecahan masalah kompleks menjadi komponen terkelola.
+                </p>
+              </div>
+
+              <div style="background: var(--color-surface); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--color-card-border);">
+                <strong style="color: var(--color-primary); font-size: 0.88rem; display: block; margin-bottom: 0.3rem;">
+                  <i class="fa-solid fa-chart-column"></i> 2. Pengenalan Pola
+                </strong>
+                <p style="font-size: 0.82rem; margin: 0; color: var(--color-text-muted);">
+                  Detektor data interaktif kurva jam antrean kantin sekolah & identifikasi tren keteraturan perilaku.
+                </p>
+              </div>
+
+              <div style="background: var(--color-surface); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--color-card-border);">
+                <strong style="color: var(--color-primary); font-size: 0.88rem; display: block; margin-bottom: 0.3rem;">
+                  <i class="fa-solid fa-filter"></i> 3. Abstraksi
+                </strong>
+                <p style="font-size: 0.82rem; margin: 0; color: var(--color-text-muted);">
+                  Slider visual 3 tingkat penyaringan detail navigasi peta ojol (distraksi vs rute GPS inti).
+                </p>
+              </div>
+
+              <div style="background: var(--color-surface); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--color-card-border);">
+                <strong style="color: var(--color-primary); font-size: 0.88rem; display: block; margin-bottom: 0.3rem;">
+                  <i class="fa-solid fa-list-ol"></i> 4. Algoritma
+                </strong>
+                <p style="font-size: 0.82rem; margin: 0; color: var(--color-text-muted);">
+                  Simulator perancangan langkah logis terurut (Misi Pagi Tepat Waktu & Algoritma Searching).
+                </p>
+              </div>
+            </div>
+            <p style="margin-bottom: 0;">
+              <strong>Keunggulan Pedagogis:</strong> 100% bebas beban skor penilaian (<em>non-evaluative & pressure-free</em>) untuk mereduksi kecemasan belajar siswa, dapat diakses tanpa login, serta dilengkapi audio text-to-speech yang inklusif bagi murid bergaya belajar auditori.
+            </p>
+          </div>
+        </div>
+
+        <!-- SINTESIS / REFLEKSI AKHIR SEMESTER 2 -->
+        <div class="card" style="border: 2px solid var(--color-primary-border); background: linear-gradient(135deg, var(--color-surface), var(--color-primary-soft)); margin-top: 2.5rem; padding: 2.5rem;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div class="card-icon-header" style="margin-bottom: 0;">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div>
+              <span class="badge badge-maroon" style="margin-bottom: 0.35rem;">Sintesis Integratif LK 2</span>
+              <h2 style="font-size: 1.55rem; color: var(--color-text-title); margin: 0;">
+                Sintesis Keterkaitan Seluruh Pengalaman Belajar Semester 2
+              </h2>
+            </div>
+          </div>
+
+          <div class="card-body" style="font-size: 0.98rem; line-height: 1.85; color: var(--color-text);">
+            <p style="margin-bottom: 1.25rem;">
+              Pengalaman belajar Semester 2 memperkuat pemahaman saya bahwa guru Informatika perlu memperhatikan kondisi sosial emosional murid, mengembangkan kompetensi secara berkelanjutan, merancang pembelajaran sesuai kebutuhan, dan bekerja secara kolaboratif. PSE membantu membangun suasana belajar positif, pengembangan profesional memberikan arah untuk terus belajar, Pembelajaran Mendalam dan Asesmen membantu merancang kegiatan bermakna, Proyek Kepemimpinan melatih perencanaan dan koordinasi, sedangkan PPL menjadi sarana penerapan dan refleksi.
+            </p>
+
+            <div style="background: var(--color-surface); padding: 1.5rem 1.75rem; border-radius: var(--radius-md); border-left: 4px solid var(--color-primary); box-shadow: var(--shadow-sm); margin-bottom: 0;">
+              <p style="margin: 0; font-size: 1rem; font-weight: 500; color: var(--color-text-title); line-height: 1.75;">
+                <i class="fa-solid fa-quote-left" style="color: var(--color-primary); margin-right: 0.5rem;"></i>
+                Ke depannya, saya ingin menjadi guru yang reflektif, adaptif, dan bertanggung jawab. Saya akan menggunakan asesmen untuk memperbaiki pembelajaran, memberikan dukungan sesuai kebutuhan murid, terus mengembangkan kompetensi, serta memanfaatkan teknologi untuk menyelesaikan masalah nyata secara tepat dan etis.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination / Next Navigation Banner -->
+        <div class="page-nav-banner">
+          <div class="page-nav-item">
+            <span class="page-nav-label">Halaman Sebelumnya</span>
+            <a href="refleksi-semester-1.html" class="page-nav-link"><i class="fa-solid fa-arrow-left"></i> Refleksi Semester 1 (6 MK)</a>
+          </div>
+          <div class="page-nav-item" style="text-align: right;">
+            <span class="page-nav-label">Halaman Selanjutnya</span>
+            <a href="refleksi-pengalaman.html" class="page-nav-link">Pandangan Masa Depan & RTL <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DETAIL ARTEFAK -->
+  <div class="modal-backdrop" id="artefak-modal" role="dialog" aria-modal="true" aria-labelledby="modal-artefak-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--color-primary); letter-spacing: 0.05em;">
+            Pratinjau Analisis Artefak Pembelajaran
+          </span>
+          <h3 class="modal-title" id="modal-artefak-title">Judul Mata Kuliah</h3>
+        </div>
+        <button class="modal-close-btn" aria-label="Tutup Jendela Pratinjau">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-artefak-body">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+    </div>
+  </div>
+
+    <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-simple">
+      <div>&copy; 2026 Dhani Rizki â€¢ Universitas Pendidikan Indonesia</div>
+      <div class="footer-meta-pill">NIM: 2531049 â€¢ Pendidikan Informatika</div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
